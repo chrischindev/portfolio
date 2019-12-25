@@ -1,0 +1,480 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: #1b1c1c; */
+  /* background-color: white; */
+}
+
+h1 {
+  color: #53ed6a;
+  /* font-family: "Rubik", sans-serif; */
+  font-family: "Inconsolata", monospace;
+  font-size: 2em;
+  text-align: center;
+  /* border: 1px solid green; */
+}
+
+#nameh1 {
+  font-size: 4vw;
+  margin: 10px;
+  /* border: 1px solid red; */
+}
+
+p {
+  color: #686b68;
+  /* font-family: "Rubik", sans-serif; */
+  font-family: "Inconsolata", monospace;
+  font-size: 1.2em;
+  /* border: 3px solid green; */
+  line-height: 1.6;
+  padding: 20px;
+  margin: 60px;
+  background-color: #f4f4f4;
+  width: 600px;
+}
+.skills {
+  margin: 10px;
+}
+
+/* #languages {
+  margin-top: 100px;
+} */
+
+#aboutMeMain,
+#hobbiesMain,
+#skillsMain {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid purple;
+}
+
+#skillsMain {
+  flex-direction: column;
+}
+
+#hero,
+#contact,
+#resume {
+  width: 100%;
+  height: 100vh;
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/deskimage2.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#projects {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/assets/projectswallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(0, 0, 0, 0.6);
+  /* background-blend-mode: overlay; */
+}
+
+#recipix {
+  background-color: turquoise;
+}
+
+#racehopper {
+  background-color: green;
+}
+
+#botbuddies {
+  background-color: purple;
+}
+
+#resume {
+  background-image: url("/assets/resumewallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #1b1c1c;
+  height: 100vh;
+}
+
+/* .textScrambleContainer {
+  height: 50%;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  border: 1px solid green;
+} */
+
+.text {
+  font-weight: 500;
+  font-size: 2.5vw;
+  color: #53ed6a;
+  /* font-family: "Rubik", sans-serif; */
+  font-family: "Inconsolata", monospace;
+  /* border: 1px solid red; */
+  width: 47%;
+  height: 47%;
+  /* text-align: center; */
+  padding-top: 15vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.dud {
+  color: #53ed6a;
+}
+
+span {
+  color: #53ed6a;
+  font-size: 1.2em;
+}
+#sticky {
+  /* border: 1px solid green; */
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  /* background-color: rgba(231, 216, 216, 0.144); */
+  background-color: #242423;
+  border-radius: 5px;
+  height: 85px;
+}
+
+#sticky.stick {
+  position: fixed;
+  top: 10px;
+  z-index: 10000;
+  padding: 0px;
+  /* background-color: #242423; */
+}
+
+button:hover {
+  transform: scale(1.25);
+}
+
+.navbarIcon:hover {
+  border: 3px solid #53ed6a;
+}
+
+#buttonAboutMe,
+#buttonProjects,
+#buttonResume,
+#buttonGithub,
+#buttonLinkedIn,
+#buttonContact {
+  background-color: transparent;
+  width: 64px;
+  height: 64px;
+  border: none;
+  transition: transform 0.3s;
+}
+
+.navbarIcon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
+#selfpic {
+  width: 320px;
+  height: 320px;
+  border: 3px solid #afe0b7;
+  box-shadow: 10px 10px #53ed6a, 20px 20px #0bc527;
+  background-image: url("/assets/portfolioselfgraypic.jpg");
+  background-color: #1b1c1c;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hobbiesPics {
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hobbiesIcon {
+  width: 125px;
+  height: 125px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* border: 1px solid green; */
+  margin: 12.5px;
+}
+
+#videogames {
+  background-image: url("/assets/gamepad.png");
+}
+#travel {
+  background-image: url("/assets/travel.png");
+}
+#swim {
+  background-image: url("/assets/swim.png");
+}
+#run {
+  background-image: url("/assets/run.png");
+}
+#tv {
+  background-image: url("/assets/tv.png");
+}
+#hp {
+  background-image: url("/assets/harry.png");
+}
+#pho {
+  background-image: url("/assets/noodles.png");
+}
+#sushi {
+  background-image: url("/assets/sushi.png");
+}
+
+#buttonRecipix,
+#buttonRaceHopper,
+#buttonBotBuddies {
+  width: 200px;
+  height: 200px;
+  background-image: url("/assets/sushi.png");
+}
+
+/* ------------spinning carousel------------ */
+.carousel_wrapper {
+  position: relative;
+  width: 100px;
+  margin: 50px auto 300px auto;
+
+  perspective: 1000px;
+  /* border: 1px solid red; */
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateY(-360deg) translateZ(-396px); /* add reverse transformation from the slides */
+  animation: swirl 30s steps(10000, end) infinite;
+  /* border: 1px solid green; */
+}
+
+.slide {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.slide img {
+  width: 100px;
+}
+
+.slide.one {
+  transform: rotateY(0deg) translateZ(396px);
+}
+.slide.two {
+  transform: rotateY(14.4deg) translateZ(396px);
+}
+.slide.three {
+  transform: rotateY(28.8deg) translateZ(396px);
+  background-color: white;
+  padding-top: 50px;
+}
+.slide.four {
+  transform: rotateY(43.2deg) translateZ(396px);
+}
+.slide.five {
+  transform: rotateY(57.6deg) translateZ(396px);
+}
+.slide.six {
+  transform: rotateY(72deg) translateZ(396px);
+}
+.slide.seven {
+  transform: rotateY(86.4deg) translateZ(396px);
+}
+.slide.eight {
+  transform: rotateY(100.8deg) translateZ(396px);
+}
+.slide.nine {
+  transform: rotateY(115.2deg) translateZ(396px);
+}
+.slide.s10 {
+  transform: rotateY(129.6deg) translateZ(396px);
+}
+.slide.s11 {
+  transform: rotateY(144deg) translateZ(396px);
+}
+.slide.s12 {
+  transform: rotateY(158.4deg) translateZ(396px);
+}
+.slide.s13 {
+  transform: rotateY(172.8deg) translateZ(396px);
+}
+.slide.s14 {
+  transform: rotateY(187.2deg) translateZ(396px);
+}
+.slide.s15 {
+  transform: rotateY(201.6deg) translateZ(396px);
+}
+.slide.s16 {
+  transform: rotateY(216deg) translateZ(396px);
+}
+.slide.s17 {
+  transform: rotateY(230.4deg) translateZ(396px);
+}
+.slide.s18 {
+  transform: rotateY(244.8deg) translateZ(396px);
+}
+.slide.s19 {
+  transform: rotateY(259.2deg) translateZ(396px);
+}
+.slide.s20 {
+  transform: rotateY(273.6deg) translateZ(396px);
+}
+.slide.s21 {
+  transform: rotateY(288deg) translateZ(396px);
+}
+.slide.s22 {
+  transform: rotateY(302.4deg) translateZ(396px);
+}
+.slide.s23 {
+  transform: rotateY(316.8deg) translateZ(396px);
+}
+.slide.s24 {
+  transform: rotateY(331.2deg) translateZ(396px);
+}
+.slide.s25 {
+  transform: rotateY(345.6deg) translateZ(396px);
+}
+
+@keyframes swirl {
+  from {
+    transform: rotateY(-360deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+/* ------MOBILE PHONES STYLING------ */
+@media only screen and (max-width: 600px) {
+  #hero {
+    height: 73%;
+    /* background-position: left bottom; */
+  }
+  #nameh1 {
+    font-size: 2.5em;
+  }
+  .textScrambleContainer {
+    width: 320px;
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #53ed6a;
+    /* font-family: "Rubik", sans-serif; */
+    font-family: "Inconsolata", monospace;
+    border: 1px solid red;
+    width: 100%;
+    height: 38%;
+    /* text-align: center; */
+    padding-top: 15vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 10px;
+  }
+
+  p {
+    line-height: 1.6;
+    padding: 8px;
+    margin: 20px;
+    font-size: 0.9em;
+    background-color: #f4f4f4;
+  }
+
+  .skills {
+    margin: 10px;
+  }
+  .navbarIcon {
+    width: 35px;
+    height: 35px;
+  }
+  span {
+    /* color: #ac1295; */
+    font-size: 1em;
+  }
+
+  #sticky {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+
+    background-color: #242423;
+    border-radius: 0;
+    height: 60px;
+
+    order: -1;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+  }
+
+  #sticky.stick {
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    border-radius: 0;
+  }
+
+  #selfpic {
+    width: 240px;
+    /* box-shadow: 10px 10px #53ed6a, 20px 20px #0bc527; */
+  }
+
+  #pIntro {
+    margin-top: 40px;
+  }
+
+  #hobbiesPics {
+    display: flex;
+    width: 320px;
+    flex-wrap: wrap;
+  }
+
+  .hobbiesIcon {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+  }
+
+  .carousel_wrapper {
+    margin: 20px auto 225px auto;
+  }
+}
