@@ -9,6 +9,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100vh;
+  font-family: "Inconsolata", monospace;
   /* background-color: #1b1c1c; */
   /* background-color: white; */
 }
@@ -16,7 +17,7 @@ body {
 h1 {
   color: #53ed6a;
   /* font-family: "Rubik", sans-serif; */
-  font-family: "Inconsolata", monospace;
+  /* font-family: "Inconsolata", monospace; */
   font-size: 2em;
   text-align: center;
   /* border: 1px solid green; */
@@ -31,7 +32,7 @@ h1 {
 p {
   color: #686b68;
   /* font-family: "Rubik", sans-serif; */
-  font-family: "Inconsolata", monospace;
+  /* font-family: "Inconsolata", monospace; */
   font-size: 1.2em;
   /* border: 3px solid green; */
   line-height: 1.6;
@@ -44,27 +45,54 @@ p {
   margin: 10px;
 }
 
-/* #languages {
-  margin-top: 100px;
-} */
-
 #aboutMeMain,
 #hobbiesMain,
-#skillsMain {
+#skillsMain,
+#resumeMain {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 3px solid purple;
+  /* border: 3px solid purple; */
 }
 
 #skillsMain {
   flex-direction: column;
 }
 
+#resumeMain {
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 450px;
+  height: 450px;
+  background-color: rgb(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+}
+/* a:focus {
+  outline: 3px dashed #53ed6a;
+} */
+
+a:visited {
+  color: white;
+}
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 #hero,
-#contact,
 #resume {
   width: 100%;
   height: 100vh;
@@ -109,30 +137,48 @@ p {
 }
 
 #resume {
-  background-image: url("/assets/resumewallpaper.jpg");
+  background-image: url("/assets/codewallpaper.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: #1b1c1c;
-  height: 100vh;
-}
-
-/* .textScrambleContainer {
-  height: 50%;
-  width: 600px;
+  /* background-color: rgb(0, 0, 0, 0.7); */
+  /* background-blend-mode: overlay; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  display: flex;
-  padding: 10px;
-  border: 1px solid green;
-} */
+}
+
+#resumeView,
+#resumeDownload {
+  /* background-color: #242423; */
+  /* background-color: rgb(0, 0, 0, 0.7); */
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #53ed6a;
+  font-size: 2em;
+  text-align: center;
+  padding: 20px;
+  vertical-align: center;
+  transition: background-color 0.5s ease;
+}
+
+#resumeView:hover,
+#resumeDownload:hover {
+  background-color: #53ed6a;
+}
+
+#viewresumelogo,
+#downloadresumelogo {
+  width: 100px;
+  display: block;
+}
 
 .text {
   font-weight: 500;
   font-size: 2.5vw;
   color: #53ed6a;
-  /* font-family: "Rubik", sans-serif; */
-  font-family: "Inconsolata", monospace;
+  /* font-family: "Inconsolata", monospace; */
   /* border: 1px solid red; */
   width: 47%;
   height: 47%;
@@ -382,21 +428,16 @@ button:hover {
 @media only screen and (max-width: 600px) {
   #hero {
     height: 73%;
-    /* background-position: left bottom; */
   }
   #nameh1 {
     font-size: 2.5em;
-  }
-  .textScrambleContainer {
-    width: 320px;
   }
 
   .text {
     font-weight: 500;
     font-size: 1.5em;
     color: #53ed6a;
-    /* font-family: "Rubik", sans-serif; */
-    font-family: "Inconsolata", monospace;
+    /* font-family: "Inconsolata", monospace; */
     border: 1px solid red;
     width: 100%;
     height: 38%;
@@ -415,15 +456,19 @@ button:hover {
     background-color: #f4f4f4;
   }
 
+  #skillsMain {
+    flex-direction: row;
+  }
   .skills {
-    margin: 10px;
+    margin: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .navbarIcon {
     width: 35px;
     height: 35px;
   }
   span {
-    /* color: #ac1295; */
     font-size: 1em;
   }
 
@@ -451,7 +496,6 @@ button:hover {
 
   #selfpic {
     width: 240px;
-    /* box-shadow: 10px 10px #53ed6a, 20px 20px #0bc527; */
   }
 
   #pIntro {
