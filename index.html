@@ -22,8 +22,7 @@
 
 
     <div class="text"></div>
-    <!-- <div class="textScrambleContainer">
-    </div> -->
+
     <div id="sticky-anchor"></div>
     <div id='sticky'>
       <button id='buttonAboutMe'>
@@ -42,11 +41,12 @@
         <span>Contact</span>
         <img class="navbarIcon" src="assets/gmail.png">
       </button>
-      <button id='buttonGithub'>
+      <button id='buttonGithub' onclick="window.open('https://github.com/chrischindev','_blank'); return false;">
         <span>Github</span>
         <img class="navbarIcon" src="/assets/github.png">
       </button>
-      <button id='buttonLinkedIn'>
+      <button id='buttonLinkedIn'
+        onclick="window.open('https://www.linkedin.com/in/chrischindev/','_blank'); return false;">
         <span>LinkedIn</span>
         <img class="navbarIcon" src="/assets/linkedin.png">
       </button>
@@ -73,7 +73,7 @@
       </p>
     </div>
   </div>
-  <div id="skills">
+  <div id="skillsDiv">
     <h1 data-aos="fade-up">Tech I Know</h1>
     <div class="carousel_wrapper" data-aos="zoom-in">
       <div class="carousel">
@@ -150,27 +150,32 @@
           <img src="/assets/tech/c++.png" />
         </div>
         <div class="slide s25">
-          <img src="/assets/tech/socketio.gif" />
+          <img src="/assets/tech/socket-io-logo.png" />
         </div>
       </div><!-- / .carousel -->
     </div><!-- / .carousel_wrapper -->
-    <div id="skillsMain" data-aos="fade-up">
-      <p class="skills" data-aos="fade-up">
+    <div id="skillsMain">
+      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up">
         Languages: JavaScript, C#, C++, Java
       </p>
-      <p class="skills" data-aos="fade-up">
+      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
+        data-aos-delay="250">
         Frontend: React, React Native, Redux, HTML, CSS, Bootstrap, Semantic UI, Expo
       </p>
-      <p class="skills" data-aos="fade-up">
+      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
+        data-aos-delay="500">
         Backend: Node.js, Express, Sequelize, PostgreSQL
       </p>
-      <p class="skills" data-aos="fade-up">
+      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
+        data-aos-delay="750">
         DevOps: Git, Github, npm, webpack, Heroku, Travis CI
       </p>
-      <p class="skills" data-aos="fade-up">
+      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
+        data-aos-delay="1000">
         Testing: Mocha, Chai, Jasmine
       </p>
-      <p class="skills" data-aos="fade-up">
+      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
+        data-aos-delay="1250">
         Tools: VS Code, Postman, Postico, Unity
       </p>
     </div>
@@ -180,18 +185,26 @@
 
   <div id="hobbies">
     <div id="hobbiesTitle" data-aos="fade-up">
-      <h1>Stuff I Like</h1>
+      <h1 id="triggerHobbies">Stuff I Like</h1>
     </div>
-    <div id="hobbiesMain" data-aos="fade-up">
+    <div id="hobbiesMain">
       <div id="hobbiesPics">
-        <div class="hobbiesIcon" id="videogames" data-aos="zoom-out"></div>
-        <div class="hobbiesIcon" id="travel" data-aos="zoom-out" data-aos-delay="150"></div>
-        <div class="hobbiesIcon" id="swim" data-aos="zoom-out" data-aos-delay="300"></div>
-        <div class="hobbiesIcon" id="run" data-aos="zoom-out" data-aos-delay="450"></div>
-        <div class="hobbiesIcon" id="tv" data-aos="zoom-out" data-aos-delay="600"></div>
-        <div class="hobbiesIcon" id="hp" data-aos="zoom-out" data-aos-delay="750"></div>
-        <div class="hobbiesIcon" id="pho" data-aos="zoom-out" data-aos-delay="900"></div>
-        <div class="hobbiesIcon" id="sushi" data-aos="zoom-out" data-aos-delay="1050"></div>
+        <div class="hobbiesIcon" id="videogames" data-aos="zoom-out" data-aos-anchor="#triggerHobbies"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="travel" data-aos="zoom-out" data-aos-delay="150" data-aos-anchor="#triggerHobbies"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="swim" data-aos="zoom-out" data-aos-delay="300" data-aos-anchor="#triggerHobbies"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="run" data-aos="zoom-out" data-aos-delay="450" data-aos-anchor="#triggerHobbies"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="tv" data-aos="zoom-out" data-aos-delay="600" data-aos-anchor="#triggerHobbies"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="hp" data-aos="zoom-out" data-aos-delay="750" data-aos-anchor="#triggerHobbies"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="pho" data-aos="zoom-out" data-aos-delay="900" data-aos-anchor="#triggerHobbies"
+          data-aos-anchor-placment="top-center"></div>
+        <div class="hobbiesIcon" id="sushi" data-aos="zoom-out" data-aos-delay="1050" data-aos-anchor="#triggerHobbies"
+          data-aos-anchor-placment="top-center"></div>
       </div>
       <p data-aos="fade-up" id="p2">
         Besides my passion for coding, I love to play video games, specifically RPGs and MMORPGs. I also love to travel,

@@ -2,6 +2,7 @@ class TextScramble {
   constructor(el) {
     this.el = el;
     this.chars = "!@$%&()<>-_\\/[]{}—=+*^?#________abcdefghijklmnopqrstuvwxyz";
+    // this.chars = "!<>-_\\/[]{}—=+*^?#________";
 
     this.update = this.update.bind(this);
   }
@@ -54,12 +55,19 @@ class TextScramble {
 }
 
 const phrases = [
-  "Hello! 👋🏽",
-  "My name is Chris. ",
-  "I'm a software engineer. 👨🏽‍💻",
-  "I develop websites 🖥️ 💻, ",
-  "mobile apps 📱, ",
-  "and video games 🎮. ",
+  // "Hello! 👋🏽",
+  // "My name is Chris. ",
+  // "I'm a software engineer. 👨🏽‍💻",
+  // "I develop websites 🖥️ 💻, ",
+  // "mobile apps 📱, ",
+  // "and video games 🎮. ",
+  // ""
+  "Hello!",
+  "My name is Chris.",
+  "I'm a software engineer.",
+  "I develop websites,",
+  "mobile apps,",
+  "and video games.",
   ""
 ];
 

@@ -28,7 +28,8 @@ AOS.init({
   duration: 1000,
   easing: "ease",
   mirror: false,
-  disable: false
+  disable: false,
+  once: true
 });
 
 const buttonAboutMe = document.getElementById("buttonAboutMe");

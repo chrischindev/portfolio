@@ -10,27 +10,31 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Inconsolata", monospace;
-  /* background-color: #1b1c1c; */
+  background-color: #1b1c1c;
   /* background-color: white; */
 }
 
 h1 {
   color: #53ed6a;
-  /* font-family: "Rubik", sans-serif; */
-  /* font-family: "Inconsolata", monospace; */
-  font-size: 2em;
+
+  font-size: 3.5em;
   text-align: center;
   /* border: 1px solid green; */
 }
 
 #nameh1 {
-  font-size: 4vw;
+  /* font-size: 4vw; */
   margin: 10px;
   /* border: 1px solid red; */
 }
 
+#skillsDiv {
+  background-color: #202020;
+}
+
 p {
-  color: #686b68;
+  /* color: #686b68; */
+  color: white;
   /* font-family: "Rubik", sans-serif; */
   /* font-family: "Inconsolata", monospace; */
   font-size: 1.2em;
@@ -38,7 +42,8 @@ p {
   line-height: 1.6;
   padding: 20px;
   margin: 60px;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
+  background-color: #2d2e2e;
   width: 600px;
 }
 .skills {
@@ -93,14 +98,13 @@ a:active {
 }
 
 #hero,
-#resume {
+#resume,
+#contact {
   width: 100%;
   height: 100vh;
 }
 
 #hero {
-  width: 100%;
-  height: 100vh;
   background-image: url("/assets/deskimage2.jpg");
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -116,7 +120,7 @@ a:active {
 #projects {
   width: 100%;
   height: 100vh;
-  background-image: url("/assets/projectswallpaper.jpg");
+  /* background-image: url("/assets/projectswallpaper.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -137,7 +141,7 @@ a:active {
 }
 
 #resume {
-  background-image: url("/assets/codewallpaper.jpg");
+  /* background-image: url("/assets/codewallpaper.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -176,25 +180,29 @@ a:active {
 
 .text {
   font-weight: 500;
-  font-size: 2.5vw;
+  /* font-size: 2.5vw; */
+  font-size: 2em;
   color: #53ed6a;
-  /* font-family: "Inconsolata", monospace; */
+
   /* border: 1px solid red; */
   width: 47%;
   height: 47%;
-  /* text-align: center; */
+
   padding-top: 15vh;
   padding-left: 2vw;
   padding-right: 2vw;
+  text-align: center;
 }
 
 .dud {
-  color: #53ed6a;
+  font-size: 1em;
+  color: #757575;
 }
 
 span {
   color: #53ed6a;
   font-size: 1.2em;
+  font-family: "Inconsolata", monospace;
 }
 #sticky {
   /* border: 1px solid green; */
@@ -202,7 +210,7 @@ span {
   display: flex;
   justify-content: space-evenly;
   /* background-color: rgba(231, 216, 216, 0.144); */
-  background-color: #242423;
+  background-color: rgba(125, 125, 125, 0.3);
   border-radius: 5px;
   height: 85px;
 }
@@ -212,7 +220,7 @@ span {
   top: 10px;
   z-index: 10000;
   padding: 0px;
-  /* background-color: #242423; */
+  background-color: rgba(1, 1, 1, 0.8);
 }
 
 button:hover {
@@ -252,6 +260,8 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 #hobbiesPics {
@@ -414,6 +424,7 @@ button:hover {
 }
 .slide.s25 {
   transform: rotateY(345.6deg) translateZ(396px);
+  padding-top: 15px;
 }
 
 @keyframes swirl {
@@ -437,8 +448,9 @@ button:hover {
     font-weight: 500;
     font-size: 1.5em;
     color: #53ed6a;
+    /* color: white; */
     /* font-family: "Inconsolata", monospace; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 38%;
     /* text-align: center; */
@@ -453,7 +465,7 @@ button:hover {
     padding: 8px;
     margin: 20px;
     font-size: 0.9em;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
   }
 
   #skillsMain {
@@ -477,7 +489,8 @@ button:hover {
     display: flex;
     justify-content: space-evenly;
 
-    background-color: #242423;
+    /* background-color: #242423; */
+    background-color: rgba(1, 1, 1, 0.8);
     border-radius: 0;
     height: 60px;
 
@@ -492,6 +505,7 @@ button:hover {
     top: 0;
     z-index: 10000;
     border-radius: 0;
+    background-color: rgba(1, 1, 1, 0.8);
   }
 
   #selfpic {
@@ -518,7 +532,108 @@ button:hover {
     margin: 5px;
   }
 
+  .carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) translateZ(-237.5px); /* add reverse transformation from the slides */
+    animation: swirl 30s steps(10000, end) infinite;
+    /* border: 1px solid green; */
+  }
+
   .carousel_wrapper {
     margin: 20px auto 225px auto;
+  }
+
+  .slide {
+    position: absolute;
+    /* top: 10px;
+    left: 10px; */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .slide img {
+    width: 60px;
+  }
+
+  .slide.one {
+    transform: rotateY(0deg) translateZ(237.5px);
+  }
+  .slide.two {
+    transform: rotateY(14.4deg) translateZ(237.5px);
+  }
+  .slide.three {
+    transform: rotateY(28.8deg) translateZ(237.5px);
+    background-color: white;
+    padding-top: 0px;
+  }
+  .slide.four {
+    transform: rotateY(43.2deg) translateZ(237.5px);
+  }
+  .slide.five {
+    transform: rotateY(57.6deg) translateZ(237.5px);
+  }
+  .slide.six {
+    transform: rotateY(72deg) translateZ(237.5px);
+  }
+  .slide.seven {
+    transform: rotateY(86.4deg) translateZ(237.5px);
+  }
+  .slide.eight {
+    transform: rotateY(100.8deg) translateZ(237.5px);
+  }
+  .slide.nine {
+    transform: rotateY(115.2deg) translateZ(237.5px);
+  }
+  .slide.s10 {
+    transform: rotateY(129.6deg) translateZ(237.5px);
+  }
+  .slide.s11 {
+    transform: rotateY(144deg) translateZ(237.5px);
+  }
+  .slide.s12 {
+    transform: rotateY(158.4deg) translateZ(237.5px);
+  }
+  .slide.s13 {
+    transform: rotateY(172.8deg) translateZ(237.5px);
+  }
+  .slide.s14 {
+    transform: rotateY(187.2deg) translateZ(237.5px);
+  }
+  .slide.s15 {
+    transform: rotateY(201.6deg) translateZ(237.5px);
+  }
+  .slide.s16 {
+    transform: rotateY(216deg) translateZ(237.5px);
+  }
+  .slide.s17 {
+    transform: rotateY(230.4deg) translateZ(237.5px);
+  }
+  .slide.s18 {
+    transform: rotateY(244.8deg) translateZ(237.5px);
+  }
+  .slide.s19 {
+    transform: rotateY(259.2deg) translateZ(237.5px);
+  }
+  .slide.s20 {
+    transform: rotateY(273.6deg) translateZ(237.5px);
+  }
+  .slide.s21 {
+    transform: rotateY(288deg) translateZ(237.5px);
+  }
+  .slide.s22 {
+    transform: rotateY(302.4deg) translateZ(237.5px);
+  }
+  .slide.s23 {
+    transform: rotateY(316.8deg) translateZ(237.5px);
+  }
+  .slide.s24 {
+    transform: rotateY(331.2deg) translateZ(237.5px);
+  }
+  .slide.s25 {
+    transform: rotateY(345.6deg) translateZ(237.5px);
   }
 }
