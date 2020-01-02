@@ -8,23 +8,51 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Geo|Lato:400,700&display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
-
-  <div id="hero">
-    <div id="nameDiv" data-aos="fade-down">
-      <h1 id="nameh1">Welcome! My name is Chris.</h1>
+  <nav>
+    <a href="#top" id="logo">
+      C
+    </a>
+    <ul class="nav-links">
+      <li><a href="#aboutMe" id="linkAboutMe">About</a></li>
+      <li><a href="#projects" id="linkProjects">Projects</a></li>
+      <li><a href="#resume" id="linkResume">Resume</a></li>
+      <li><a href="#contact" id="linkContact">Contact</a></li>
+      <li><a href="https://github.com/chrischindev" id="linkGithub" target="_blank">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/chrischindev/" id="linkLinkedIn" target="_blank">LinkedIn</a></li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+  <div id="top">
+    <div id="nameDiv">
+      <h2 id="helloh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="150"
+        data-aos="fade-up">Hello! My name is </h2>
+      <h1 id="nameh1" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="300"
+        data-aos="fade-up">
+        Chris Chin.</h1>
+      <h2 id="seh2" data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="450"
+        data-aos="fade-up">
+        I'm a software engineer.</h2>
     </div>
 
 
-    <div class="text"></div>
 
-    <div id="sticky-anchor"></div>
-    <div id='sticky'>
+
+    <!-- <div class="text"></div> -->
+
+    <!-- <div id="sticky-anchor"></div> -->
+    <!-- <div id='sticky'>
       <button id='buttonAboutMe'>
         <span>About Me</span>
         <img class="navbarIcon" src="/assets/aboutme.png">
@@ -51,7 +79,7 @@
         <img class="navbarIcon" src="/assets/linkedin.png">
       </button>
 
-    </div>
+    </div> -->
 
   </div>
 
@@ -65,17 +93,189 @@
       <div id="selfpic" data-aos="fade-up">
       </div>
       <p data-aos="fade-up" id="pIntro">
-        Hi! I’m Chris, a full-stack web developer and software engineer based in Brooklyn, NY. After working as an
+        Hi! I’m Chris Chin, a full-stack web developer and software engineer based in Brooklyn, NY. After working as an
         accountant for almost 7 years, I’ve decided to take the leap to pursue a career in software
         engineering. I’ve enrolled in a full-time immersive software engineering program at Fullstack Academy in NYC.
         Having just graduated from this rigorous program, I can say that applying to a coding bootcamp has been the best
-        decision I have ever made in my life. Please check out the projects I have made while attending Fullstack!
+        decision I have ever made in my life. I love to learn new technologies and flex my creativity to create amazing
+        things.
       </p>
     </div>
   </div>
   <div id="skillsDiv">
-    <h1 data-aos="fade-up">Tech I Know</h1>
-    <div class="carousel_wrapper" data-aos="zoom-in">
+    <div id="techTitle" data-aos="fade-up">
+      <h1>Tech I Know</h1>
+    </div>
+    <div id="skillsMain">
+      <div class="techDiv" id="frontend">
+        <div class="techDivTitle">
+          Frontend
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/reactlogo2.png" alt="React / React Native" />
+          <span class="tooltiptext">React / React Native</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/reduxlogo2.png" alt="Redux" />
+          <span class="tooltiptext">Redux</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/htmllogo.png" alt="HTML" />
+          <span class="tooltiptext">HTML</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/csslogo.png" alt="CSS" />
+          <span class="tooltiptext">CSS</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/jquery.png" alt="jQuery" />
+          <span class="tooltiptext">jQuery</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/bootstraplogo.png" alt="Bootstrap" />
+          <span class="tooltiptext">Bootstrap</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/semantic.png" alt="Semantic UI" />
+          <span class="tooltiptext">Semantic UI</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/expo.png" alt="Expo">
+          <span class="tooltiptext">Expo</span>
+        </div>
+      </div>
+
+      <div class="techDiv" id="backend">
+        <div class="techDivTitle">
+          Backend
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/nodelogo.png" alt="Node.js" />
+          <span class="tooltiptext">Node.js</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/expresslogo2.png" alt="Express" />
+          <span class="tooltiptext">Express</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/sequelize.png" alt="Sequelize" />
+          <span class="tooltiptext">Sequelize</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/postgreslogo.png" alt="PostgreSQL" />
+          <span class="tooltiptext">PostgreSQL</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/socket-io-logo.png" alt="Socket.io" />
+          <span class="tooltiptext">Socket.io</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/oauth.png" alt="OAuth" />
+          <span class="tooltiptext">OAuth</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/passportjs.png" alt="Passport.js">
+          <span class="tooltiptext">Passport.js</span>
+        </div>
+      </div>
+
+      <div class="techDiv" id="devops">
+        <div class="techDivTitle">
+          DevOps
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/gitlogo.png" alt="Git" />
+          <span class="tooltiptext">Git</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/githublogo.png" alt="Github" />
+          <span class="tooltiptext">Github</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/npm.png" alt="npm" />
+          <span class="tooltiptext">npm</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/webpack.png" alt="Webpack" />
+          <span class="tooltiptext">Webpack</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/heroku.png" alt="Heroku" />
+          <span class="tooltiptext">Heroku</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/travis.png" alt="Travis CI" />
+          <span class="tooltiptext">Travis CI</span>
+        </div>
+      </div>
+
+      <div class="techDiv" id="languages">
+        <div class="techDivTitle">
+          Languages
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/jslogo.png" alt="JavaScript" />
+          <span class="tooltiptext">JavaScript</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/c++.png" alt="C++" />
+          <span class="tooltiptext">C++</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/csharplogo.png" alt="C#" />
+          <span class="tooltiptext">C#</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/java.png" alt="Java" />
+          <span class="tooltiptext">Java</span>
+        </div>
+      </div>
+
+
+
+      <div class="techDiv" id="tools">
+        <div class="techDivTitle">
+          Tools
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/vscode.png" alt="VS Code" />
+          <span class="tooltiptext">VS Code</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/postman.png" alt="Postman" />
+          <span class="tooltiptext">Postman</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/postico.png" alt="Postico">
+          <span class="tooltiptext">Postico</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/unity.png" alt="Unity" />
+          <span class="tooltiptext">Unity</span>
+        </div>
+      </div>
+
+
+
+      <div class="techDiv" id="testing">
+        <div class="techDivTitle">
+          Testing
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/mocha.png" alt="Mocha" />
+          <span class="tooltiptext">Mocha</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/chai.png" alt="Chai" />
+          <span class="tooltiptext">Chai</span>
+        </div>
+        <div class="tech tooltip">
+          <img src="/assets/tech/jasmine.png" alt="Jasmine" />
+          <span class="tooltiptext">Jasmine</span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="carousel_wrapper" data-aos="zoom-in">
       <div class="carousel">
         <div class="slide one">
           <img src="/assets/tech/jslogo.png" />
@@ -90,10 +290,10 @@
           <img src="/assets/tech/sequelize.png" />
         </div>
         <div class="slide five">
-          <img src="/assets/tech/reactlogo.png" />
+          <img src="/assets/tech/reactlogo2.png" />
         </div>
         <div class="slide six">
-          <img src="/assets/tech/reduxlogo.png" />
+          <img src="/assets/tech/reduxlogo2.png" />
         </div>
         <div class="slide seven">
           <img src="/assets/tech/htmllogo.png" />
@@ -120,7 +320,7 @@
           <img src="/assets/tech/heroku.png" />
         </div>
         <div class="slide s15">
-          <img src="/assets/tech/bootstrap.png" />
+          <img src="/assets/tech/bootstraplogo.png" />
         </div>
         <div class="slide s16">
           <img src="/assets/tech/semantic.png" />
@@ -152,19 +352,19 @@
         <div class="slide s25">
           <img src="/assets/tech/socket-io-logo.png" />
         </div>
-      </div><!-- / .carousel -->
-    </div><!-- / .carousel_wrapper -->
-    <div id="skillsMain">
+      </div>
+    </div> -->
+    <!-- <div id="skillsMain">
       <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up">
         Languages: JavaScript, C#, C++, Java
       </p>
       <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
         data-aos-delay="250">
-        Frontend: React, React Native, Redux, HTML, CSS, Bootstrap, Semantic UI, Expo
+        Frontend: React, React Native, Redux, HTML, CSS, jQuery, Bootstrap, Semantic UI, Expo
       </p>
       <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
         data-aos-delay="500">
-        Backend: Node.js, Express, Sequelize, PostgreSQL
+        Backend: Node.js, Express, RESTful API, Sequelize, PostgreSQL, OAuth, Passport.js
       </p>
       <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
         data-aos-delay="750">
@@ -178,7 +378,7 @@
         data-aos-delay="1250">
         Tools: VS Code, Postman, Postico, Unity
       </p>
-    </div>
+    </div> -->
 
   </div>
 
@@ -216,7 +416,10 @@
   </div>
 
   <div class="panel" id="projects">
-    <h1 data-aos="fade-up">Projects</h1>
+    <div id="projectsTitle" data-aos="fade-up">
+      <h1>Projects</h1>
+    </div>
+
     <div id="projectButtons">
       <button id='buttonRecipix'>Recipix</button>
       <button id='buttonRaceHopper'>Race Hopper</button>
@@ -281,16 +484,20 @@
     </div>
   </div>
   <div id="contact">
-    <h1>Contact</h1>
-    <p>
+    <div id="contactTitle" data-aos="fade-up">
+      <h1>Contact</h1>
+    </div>
+    <!-- <p>
       Email: chin.christopher@gmail.com
+      <a href="mailto:cxhyizn.cxhyrzixyzstopzhxer@xgyymaizl.cxozm"
+        onmouseover="this.href=this.href.replace(/[xyz]/g,'');" target="_blank">link</a>
     </p>
     <p>
       LinkedIn: https://www.linkedin.com/in/chrischindev/
     </p>
     <p>
       Github: https://github.com/chrischindev
-    </p>
+    </p> -->
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -298,7 +505,7 @@
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script type="text/javascript" src="/main.js"></script>
 
-  <script type="text/javascript" src="/textscramble.js"></script>
+  <!-- <script type="text/javascript" src="/textscramble.js"></script> -->
 
 
 </body>

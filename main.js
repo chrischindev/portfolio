@@ -1,29 +1,54 @@
-let div_top;
+const navSlide = () => {
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-links");
+  const navLinks = document.querySelectorAll(".nav-links li");
 
-$(window).resize(function() {
-  div_top = $("#sticky-anchor").offset().top;
-});
+  burger.addEventListener("click", () => {
+    // Toggle Nav
+    nav.classList.toggle("nav-active");
 
-function sticky_relocate() {
-  let window_top = $(window).scrollTop();
-  if (window_top > div_top - 10) {
-    $("#sticky").addClass("stick");
-  } else {
-    $("#sticky").removeClass("stick");
-  }
-}
-
-if ($(window).width() >= 600) {
-  $(function() {
-    div_top = $("#sticky-anchor").offset().top;
-    $(window).scroll(sticky_relocate);
+    // Animate Links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 10 +
+          0.5}s`;
+      }
+    });
+    // Burger Animation
+    burger.classList.toggle("toggle");
   });
-}
+};
 
-$(function() {
-  div_top = $("#sticky-anchor").offset().top;
-  $(window).scroll(sticky_relocate);
-});
+navSlide();
+
+// let div_top;
+
+// $(window).resize(function() {
+//   div_top = $("#sticky-anchor").offset().top;
+// });
+
+// function sticky_relocate() {
+//   let window_top = $(window).scrollTop();
+//   if (window_top > div_top - 10) {
+//     $("#sticky").addClass("stick");
+//   } else {
+//     $("#sticky").removeClass("stick");
+//   }
+// }
+
+// if ($(window).width() >= 600) {
+//   $(function() {
+//     div_top = $("#sticky-anchor").offset().top;
+//     $(window).scroll(sticky_relocate);
+//   });
+// }
+
+// $(function() {
+//   div_top = $("#sticky-anchor").offset().top;
+//   $(window).scroll(sticky_relocate);
+// });
 AOS.init({
   duration: 1000,
   easing: "ease",
@@ -32,17 +57,15 @@ AOS.init({
   once: true
 });
 
-const buttonAboutMe = document.getElementById("buttonAboutMe");
-// const buttonSkills = document.getElementById("buttonSkills");
-const buttonProjects = document.getElementById("buttonProjects");
-const buttonResume = document.getElementById("buttonResume");
-const buttonContact = document.getElementById("buttonContact");
-const buttonRecipix = document.getElementById("buttonRecipix");
-const buttonRaceHopper = document.getElementById("buttonRaceHopper");
-const buttonBotBuddies = document.getElementById("buttonBotBuddies");
+// const linkAboutMe = document.getElementById("linkAboutMe");
+// const linkProjects = document.getElementById("linkProjects");
+// const linkResume = document.getElementById("linkResume");
+// const linkContact = document.getElementById("linkContact");
+// const linkRecipix = document.getElementById("linkRecipix");
+// const linkRaceHopper = document.getElementById("linkRaceHopper");
+// const linkBotBuddies = document.getElementById("linkBotBuddies");
 
 const aboutMe = document.getElementById("aboutMe");
-// const skills = document.getElementById("skills");
 const projects = document.getElementById("projects");
 const recipix = document.getElementById("recipix");
 const racehopper = document.getElementById("racehopper");
@@ -50,27 +73,28 @@ const botbuddies = document.getElementById("botbuddies");
 const resume = document.getElementById("resume");
 const contact = document.getElementById("contact");
 
-buttonAboutMe.addEventListener("click", () =>
+logo.addEventListener("click", () =>
   aboutMe.scrollIntoView({ behavior: "smooth" })
 );
-// buttonSkills.addEventListener("click", () =>
-//   skills.scrollIntoView({ behavior: "smooth" })
+// linkAboutMe.addEventListener("click", () =>
+//   aboutMe.scrollIntoView({ behavior: "smooth" })
 // );
-buttonProjects.addEventListener("click", () =>
-  projects.scrollIntoView({ behavior: "smooth" })
-);
-buttonResume.addEventListener("click", () =>
-  resume.scrollIntoView({ behavior: "smooth" })
-);
-buttonContact.addEventListener("click", () =>
-  contact.scrollIntoView({ behavior: "smooth" })
-);
-buttonRecipix.addEventListener("click", () => {
-  recipix.scrollIntoView({ behavior: "smooth" });
-});
-buttonRaceHopper.addEventListener("click", () =>
-  racehopper.scrollIntoView({ behavior: "smooth" })
-);
-buttonBotBuddies.addEventListener("click", () =>
-  botbuddies.scrollIntoView({ behavior: "smooth" })
-);
+
+// linkProjects.addEventListener("click", () =>
+//   projects.scrollIntoView({ behavior: "smooth" })
+// );
+// linkResume.addEventListener("click", () =>
+//   resume.scrollIntoView({ behavior: "smooth" })
+// );
+// linkContact.addEventListener("click", () =>
+//   contact.scrollIntoView({ behavior: "smooth" })
+// );
+// linkRecipix.addEventListener("click", () => {
+//   recipix.scrollIntoView({ behavior: "smooth" });
+// });
+// linkRaceHopper.addEventListener("click", () =>
+//   racehopper.scrollIntoView({ behavior: "smooth" })
+// );
+// linkBotBuddies.addEventListener("click", () =>
+//   botbuddies.scrollIntoView({ behavior: "smooth" })
+// );

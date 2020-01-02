@@ -62,8 +62,8 @@ const phrases = [
   // "mobile apps 📱, ",
   // "and video games 🎮. ",
   // ""
-  "Hello!",
-  "My name is Chris.",
+  // "Hello!",
+  // "My name is Chris.",
   "I'm a software engineer.",
   "I develop websites,",
   "mobile apps,",
