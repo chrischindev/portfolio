@@ -592,9 +592,11 @@ button:hover {
 }
 #recipixslide3 {
   background-image: url("/assets/recipix/recipixslide3.png");
+  background-size: contain;
 }
 #recipixslide4 {
   background-image: url("/assets/recipix/recipixslide4.png");
+  background-size: contain;
 }
 #recipixslide5 {
   background-image: url("/assets/recipix/recipixteam.JPG");
@@ -611,6 +613,17 @@ button:hover {
 }
 #raceslide4 {
   background-image: url("/assets/ianracehopper1.jpg");
+}
+#botbuddiesslide1 {
+  background-image: url("/assets/botbuddies/botbuddiesslide1.jpg");
+}
+#botbuddiesslide2 {
+  background-image: url("/assets/botbuddies/botbuddiesslide2.png");
+  background-size: contain;
+}
+#botbuddiesslide3 {
+  background-image: url("/assets/botbuddies/botbuddiesslide3.png");
+  background-size: contain;
 }
 
 /* Next & previous buttons */
