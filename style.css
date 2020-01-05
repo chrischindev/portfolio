@@ -719,6 +719,10 @@ button:hover {
   }
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: 1000px) {
   #skillsMain {
     flex-direction: row;
