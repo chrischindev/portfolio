@@ -21,8 +21,8 @@
       C
     </a>
     <ul class="nav-links">
+      <li><a href="#projects" id="linkProjects">Portfolio</a></li>
       <li><a href="#aboutMe" id="linkAboutMe">About</a></li>
-      <li><a href="#projects" id="linkProjects">Projects</a></li>
       <li><a href="#resume" id="linkResume">Resume</a></li>
       <li><a href="#contact" id="linkContact">Contact</a></li>
       <li><a href="https://github.com/chrischindev" id="linkGithub" target="_blank">Github</a></li>
@@ -45,53 +45,234 @@
         data-aos="fade-up">
         I'm a software engineer.</h2>
     </div>
-
-
-
-
-    <!-- <div class="text"></div> -->
-
-    <!-- <div id="sticky-anchor"></div> -->
-    <!-- <div id='sticky'>
-      <button id='buttonAboutMe'>
-        <span>About Me</span>
-        <img class="navbarIcon" src="/assets/aboutme.png">
-      </button>
-      <button id='buttonProjects'>
-        <span>Projects</span>
-        <img class="navbarIcon" src="/assets/code.png">
-      </button>
-      <button id='buttonResume'>
-        <span>Resume</span>
-        <img class="navbarIcon" src="/assets/resume.png">
-      </button>
-      <button id='buttonContact'>
-        <span>Contact</span>
-        <img class="navbarIcon" src="assets/gmail.png">
-      </button>
-      <button id='buttonGithub' onclick="window.open('https://github.com/chrischindev','_blank'); return false;">
-        <span>Github</span>
-        <img class="navbarIcon" src="/assets/github.png">
-      </button>
-      <button id='buttonLinkedIn'
-        onclick="window.open('https://www.linkedin.com/in/chrischindev/','_blank'); return false;">
-        <span>LinkedIn</span>
-        <img class="navbarIcon" src="/assets/linkedin.png">
-      </button>
-
-    </div> -->
-
+    <div data-aos-anchor="#top" data-aos-anchor-placment="top-center" data-aos-delay="600" data-aos="fade-up"
+      id="projectButton">
+      <a href="#projects">View Portfolio</a>
+    </div>
   </div>
 
 
+  <div id="projects">
+    <div id="projectsTitle" data-aos="fade-up">
+      <h1>Portfolio</h1>
+    </div>
 
+    <div id="recipix" data-aos="fade-up">
+      <h1 class="projectTitle" data-aos="fade-up">Recipix</h1>
+      <!-- Slideshow container -->
+      <div data-aos="fade-up" class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="recipixSlides fade">
+
+          <div class="projectImage" id="recipixslide1"></div>
+
+          <div class="text">Recipix is a mobile app that keep tracks of items in your fridge and recommends recipes
+            based on those items.</div>
+        </div>
+
+        <div class="recipixSlides fade">
+
+          <div class="projectImage" id="recipixslide2"></div>
+
+          <div class="text">Add items to your virtual fridge by scanning the barcode or by manual input (left).
+            Optionally set an expiration date (center). All fridge items are shown in the Fridge tab (right). </div>
+        </div>
+
+        <div class="recipixSlides fade">
+          <div class="projectImage" id="recipixslide3"></div>
+
+          <div class="text">Recipix recommends delicious recipes based on what's in your fridge (left). You can also
+            filter
+            recipes by ingredients (right).</div>
+        </div>
+        <div class="recipixSlides fade">
+          <div class="projectImage" id="recipixslide4"></div>
+
+          <div class="text">Your user profile (center). You can set your dietary preferences (left) and allergies
+            (right).</div>
+        </div>
+        <div class="recipixSlides fade">
+          <div class="projectImage" id="recipixslide5"></div>
+
+          <div class="text">Developers of Recipix (from left to right): Lily Moriarty, Luis Bello, Chris Chin
+            (me), Don Ng</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="recipixDots" onclick="currentSlide(1, 0)"></span>
+        <span class="recipixDots" onclick="currentSlide(2, 0)"></span>
+        <span class="recipixDots" onclick="currentSlide(3, 0)"></span>
+        <span class="recipixDots" onclick="currentSlide(4, 0)"></span>
+        <span class="recipixDots" onclick="currentSlide(5, 0)"></span>
+      </div>
+
+      <!-- Description of project -->
+      <div class="project-description" data-aos="fade-up">
+        <p class="p-project">
+          Recipix is a cross-platform mobile application that allows a user to virtually keep track of items in their
+          fridge. Users may add items from their fridge via barcode
+          scanning, and the app generates a list of recipes they can create based on those ingredients. Users may filter
+          recipes
+          based on specific ingredients. Recommended recipes show step-by-step instructions as well as any missing
+          ingredients. This app was created in 2.5 weeks in an agile team of 4 for a capstone project.
+        </p>
+        <p class="p-project p-tech">
+          Technologies: JavaScript, React Native, Redux, Expo, Sequelize, PostgreSQL, Node.js, Express, Edamam API,
+          Spoonacular API
+        </p>
+      </div>
+
+      <!-- Project Links -->
+
+      <div data-aos="fade-up" class="projectLinks">
+        <a href="https://expo.io/@recipix/Recipix" target="_blank">Try Demo <img src="/assets/externallink2.png" /></a>
+        <a href="https://github.com/Recipix-1909/Recipix" target="_blank">View Code <img
+            src="/assets/github3.png" /></a>
+        <a href="https://www.youtube.com/watch?v=PFWivM4SjKk&list=PLx0iOsdUOUmnTCO5wLzNNeaLbbZLlngp6&index=28&t=0s"
+          target="_blank">Watch Presentation <img src="/assets/video.png" /></a>
+      </div>
+
+
+    </div>
+    <div id="racehopper" data-aos="fade-up">
+      <h1 class="projectTitle" data-aos="fade-up">Race Hopper</h1>
+      <div data-aos="fade-up" class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="raceSlides fade">
+
+          <div class="projectImage" id="raceslide1"></div>
+          <div class="text">Race Hopper is a 3D platform video game. Shown here is Level 1, which is easy peasy! Grab
+            the jewels to get a
+            better time!</div>
+        </div>
+
+        <div class="raceSlides fade">
+          <div class="projectImage" id="raceslide2"></div>
+          <div class="text">Level 2. A little bit more difficult. Mind the gaps! </div>
+        </div>
+
+        <div class="raceSlides fade">
+          <div class="projectImage" id="raceslide3"></div>
+          <div class="text">Level 3. Very difficult!! Tears were shed trying to beat this level.</div>
+        </div>
+        <div class="raceSlides fade">
+          <div class="projectImage" id="raceslide4"></div>
+          <div class="text">Here's Ian, my nephew, enjoying a game of Race Hopper!</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="raceDots" onclick="currentSlide(1, 1)"></span>
+        <span class="raceDots" onclick="currentSlide(2, 1)"></span>
+        <span class="raceDots" onclick="currentSlide(3, 1)"></span>
+        <span class="raceDots" onclick="currentSlide(4, 1)"></span>
+      </div>
+
+      <!-- Description of project -->
+      <div class="project-description" data-aos="fade-up">
+        <p class="p-project">
+          Race Hopper is a 3D platform video game built with the WebGL API designed to be played in the web browser.
+          Players must hop over obstacles to advance to the next level. Jewels may be collected to obtain a better
+          score. This game was created solo in 2 days for a hack-a-thon.
+        </p>
+        <p class="p-project p-tech">
+          Technologies: C#, Unity, WebGL
+        </p>
+      </div>
+
+      <!-- Project Links -->
+      <div data-aos="fade-up" class="projectLinks">
+        <a href="http://bit.ly/racehopper" target="_blank">Try Demo <img src="/assets/externallink2.png" /></a>
+        <a href="https://github.com/chrischindev/racehopper" target="_blank">View Code <img
+            src="/assets/github3.png" /></a>
+
+      </div>
+    </div>
+
+    <div id="botbuddies" data-aos="fade-up">
+      <h1 class="projectTitle" data-aos="fade-up">Bot-Buddies</h1>
+      <div data-aos="fade-up" class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="botSlides fade">
+
+          <div class="projectImage" id="recipixslide1"></div>
+
+          <div class="text">Caption Text</div>
+        </div>
+
+        <div class="botSlides fade">
+
+          <div class="projectImage" id="recipixslide2"></div>
+
+          <div class="text">Caption Two</div>
+        </div>
+
+        <div class="botSlides fade">
+
+          <div class="projectImage" id="recipixslide3"></div>
+
+          <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="botDots" onclick="currentSlide(1, 2)"></span>
+        <span class="botDots" onclick="currentSlide(2, 2)"></span>
+        <span class="botDots" onclick="currentSlide(3, 2)"></span>
+      </div>
+
+      <!-- Description of project -->
+      <div class="project-description" data-aos="fade-up">
+        <p class="p-project">
+          Bot-Buddies is a mock e-commerce website for consumers to purchase robots. Looking for a friend? Or a chef?
+          Perhaps feeling lonely in the love department? We’ve got you covered! The site features cart functionality,
+          guest and user checkout, and order history.
+        </p>
+        <p class="p-project p-tech">
+          Technologies: JavaScript, React, Redux, Node.js, Express, Sequelize, PostgreSQL, Semantic UI React
+        </p>
+      </div>
+
+      <!-- Project Links -->
+      <div data-aos="fade-up" class="projectLinks">
+        <a href="http://bit.ly/racehopper" target="_blank">Try Demo <img src="/assets/externallink2.png" /></a>
+        <a href="https://github.com/chrischindev/racehopper" target="_blank">View Code <img
+            src="/assets/github3.png" /></a>
+
+      </div>
+
+    </div>
+  </div>
   <div id="aboutMe">
     <div id="aboutMeTitle" data-aos="fade-up">
       <h1>About Me</h1>
     </div>
-    <div data-aos="fade-up" id="aboutMeMain">
-      <div id="selfpic" data-aos="fade-up">
-      </div>
+
+    <div id="aboutMeMain">
+      <div id="selfpic" data-aos="fade-up"></div>
+
       <p data-aos="fade-up" id="pIntro">
         Hi! I’m Chris Chin, a full-stack web developer and software engineer based in Brooklyn, NY. After working as an
         accountant for almost 7 years, I’ve decided to take the leap to pursue a career in software
@@ -100,20 +281,14 @@
         decision I have ever made in my life. I love to learn new technologies and flex my creativity to create amazing
         things.
       </p>
-      <p data-aos="fade-up" id="pIntro">
-        Besides my passion for coding, I love to play video games, specifically RPGs and MMORPGs. I also love to travel,
-        swim, and jog. I'm a Netflix and Hulu binger. I am a huge fan of Harry Potter. On Wednesdays, you can find me
-        yelling at my TV when my favorite Survivor castaway gets voted off the island. My favorite foods are phở and
-        sushi.
-      </p>
     </div>
   </div>
   <div id="skillsDiv">
     <div id="techTitle" data-aos="fade-up">
-      <h1>Tech I Know</h1>
+      <h3>Technologies I've Worked With</h3>
     </div>
     <div id="skillsMain">
-      <div class="techDiv" id="frontend">
+      <div class="techDiv" id="frontend" data-aos="fade-up">
         <div class="techDivTitle">
           Frontend
         </div>
@@ -151,7 +326,7 @@
         </div>
       </div>
 
-      <div class="techDiv" id="backend">
+      <div class="techDiv" id="backend" data-aos="fade-up">
         <div class="techDivTitle">
           Backend
         </div>
@@ -185,7 +360,7 @@
         </div>
       </div>
 
-      <div class="techDiv" id="devops">
+      <div class="techDiv" id="devops" data-aos="fade-up">
         <div class="techDivTitle">
           DevOps
         </div>
@@ -215,7 +390,7 @@
         </div>
       </div>
 
-      <div class="techDiv" id="languages">
+      <div class="techDiv" id="languages" data-aos="fade-up">
         <div class="techDivTitle">
           Languages
         </div>
@@ -237,9 +412,7 @@
         </div>
       </div>
 
-
-
-      <div class="techDiv" id="tools">
+      <div class="techDiv" id="tools" data-aos="fade-up">
         <div class="techDivTitle">
           Tools
         </div>
@@ -261,9 +434,7 @@
         </div>
       </div>
 
-
-
-      <div class="techDiv" id="testing">
+      <div class="techDiv" id="testing" data-aos="fade-up">
         <div class="techDivTitle">
           Testing
         </div>
@@ -281,137 +452,32 @@
         </div>
       </div>
     </div>
-    <!-- <div class="carousel_wrapper" data-aos="zoom-in">
-      <div class="carousel">
-        <div class="slide one">
-          <img src="/assets/tech/jslogo.png" />
-        </div>
-        <div class="slide two">
-          <img src="/assets/tech/nodelogo.png" />
-        </div>
-        <div class="slide three">
-          <img src="/assets/tech/expresslogo.png" />
-        </div>
-        <div class="slide four">
-          <img src="/assets/tech/sequelize.png" />
-        </div>
-        <div class="slide five">
-          <img src="/assets/tech/reactlogo2.png" />
-        </div>
-        <div class="slide six">
-          <img src="/assets/tech/reduxlogo2.png" />
-        </div>
-        <div class="slide seven">
-          <img src="/assets/tech/htmllogo.png" />
-        </div>
-        <div class="slide eight">
-          <img src="/assets/tech/csslogo.png" />
-        </div>
-        <div class="slide nine">
-          <img src="/assets/tech/jquery.png" />
-        </div>
-        <div class="slide s10">
-          <img src="/assets/tech/gitlogo.png" />
-        </div>
-        <div class="slide s11">
-          <img src="/assets/tech/postgreslogo.png" />
-        </div>
-        <div class="slide s12">
-          <img src="/assets/tech/webpack.png" />
-        </div>
-        <div class="slide s13">
-          <img src="/assets/tech/npm.png" />
-        </div>
-        <div class="slide s14">
-          <img src="/assets/tech/heroku.png" />
-        </div>
-        <div class="slide s15">
-          <img src="/assets/tech/bootstraplogo.png" />
-        </div>
-        <div class="slide s16">
-          <img src="/assets/tech/semantic.png" />
-        </div>
-        <div class="slide s17">
-          <img src="/assets/tech/unity.png" />
-        </div>
-        <div class="slide s18">
-          <img src="/assets/tech/csharp.png" />
-        </div>
-        <div class="slide s19">
-          <img src="/assets/tech/mocha.png" />
-        </div>
-        <div class="slide s20">
-          <img src="/assets/tech/chai.png" />
-        </div>
-        <div class="slide s21">
-          <img src="/assets/tech/jasmine.png" />
-        </div>
-        <div class="slide s22">
-          <img src="/assets/tech/travis.png" />
-        </div>
-        <div class="slide s23">
-          <img src="/assets/tech/java.png" />
-        </div>
-        <div class="slide s24">
-          <img src="/assets/tech/c++.png" />
-        </div>
-        <div class="slide s25">
-          <img src="/assets/tech/socket-io-logo.png" />
-        </div>
-      </div>
-    </div> -->
-    <!-- <div id="skillsMain">
-      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up">
-        Languages: JavaScript, C#, C++, Java
-      </p>
-      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
-        data-aos-delay="250">
-        Frontend: React, React Native, Redux, HTML, CSS, jQuery, Bootstrap, Semantic UI, Expo
-      </p>
-      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
-        data-aos-delay="500">
-        Backend: Node.js, Express, RESTful API, Sequelize, PostgreSQL, OAuth, Passport.js
-      </p>
-      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
-        data-aos-delay="750">
-        DevOps: Git, Github, npm, webpack, Heroku, Travis CI
-      </p>
-      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
-        data-aos-delay="1000">
-        Testing: Mocha, Chai, Jasmine
-      </p>
-      <p class="skills" data-aos-anchor="#skillsMain" data-aos-anchor-placment="top-top" data-aos="fade-up"
-        data-aos-delay="1250">
-        Tools: VS Code, Postman, Postico, Unity
-      </p>
-    </div> -->
-
   </div>
-
 
   <div id="hobbies">
     <div id="hobbiesTitle" data-aos="fade-up">
-      <h1 id="triggerHobbies">Stuff I Like</h1>
+      <h3>Hobbies & Interests</h3>
     </div>
     <div id="hobbiesMain">
       <div id="hobbiesPics">
-        <div class="hobbiesIcon" id="videogames" data-aos="zoom-out" data-aos-anchor="#triggerHobbies"
+        <div class="hobbiesIcon" id="videogames" data-aos="flip-left" data-aos-anchor="#hobbiesPics"
           data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="travel" data-aos="zoom-out" data-aos-delay="150" data-aos-anchor="#triggerHobbies"
+        <div class="hobbiesIcon" id="travel" data-aos="flip-left" data-aos-delay="150" data-aos-anchor="#hobbiesPics"
           data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="swim" data-aos="zoom-out" data-aos-delay="300" data-aos-anchor="#triggerHobbies"
+        <div class="hobbiesIcon" id="swim" data-aos="flip-left" data-aos-delay="300" data-aos-anchor="#hobbiesPics"
           data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="run" data-aos="zoom-out" data-aos-delay="450" data-aos-anchor="#triggerHobbies"
+        <div class="hobbiesIcon" id="run" data-aos="flip-left" data-aos-delay="450" data-aos-anchor="#hobbiesPics"
           data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="tv" data-aos="zoom-out" data-aos-delay="600" data-aos-anchor="#triggerHobbies"
+        <div class="hobbiesIcon" id="tv" data-aos="flip-left" data-aos-delay="600" data-aos-anchor="#hobbiesPics"
           data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="hp" data-aos="zoom-out" data-aos-delay="750" data-aos-anchor="#triggerHobbies"
+        <div class="hobbiesIcon" id="hp" data-aos="flip-left" data-aos-delay="750" data-aos-anchor="#hobbiesPics"
           data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="pho" data-aos="zoom-out" data-aos-delay="900" data-aos-anchor="#triggerHobbies"
+        <div class="hobbiesIcon" id="pho" data-aos="flip-left" data-aos-delay="900" data-aos-anchor="#hobbiesPics"
           data-aos-anchor-placment="top-center"></div>
-        <div class="hobbiesIcon" id="sushi" data-aos="zoom-out" data-aos-delay="1050" data-aos-anchor="#triggerHobbies"
+        <div class="hobbiesIcon" id="sushi" data-aos="flip-left" data-aos-delay="1050" data-aos-anchor="#hobbiesPics"
           data-aos-anchor-placment="top-center"></div>
       </div>
+
       <p data-aos="fade-up" id="p2">
         Besides my passion for coding, I love to play video games, specifically RPGs and MMORPGs. I also love to travel,
         swim, and jog. I'm a Netflix and Hulu binger. I am a huge fan of Harry Potter. On Wednesdays, you can find me
@@ -421,44 +487,8 @@
     </div>
   </div>
 
-  <div class="panel" id="projects">
-    <div id="projectsTitle" data-aos="fade-up">
-      <h1>Projects</h1>
-    </div>
 
-    <div id="projectButtons">
-      <button id='buttonRecipix'>Recipix</button>
-      <button id='buttonRaceHopper'>Race Hopper</button>
-      <button id='buttonBotBuddies'>Bot-Buddies</button>
-    </div>
-  </div>
-  <div class="panel" id="recipix">
-    <h1 data-aos="fade-up">Recipix</h1>
-    <p>
-      Recipix
-      Website
-      Github
-    </p>
 
-  </div>
-  <div class="panel" id="racehopper">
-    <h1 data-aos="fade-up">Race Hopper</h1>
-    <p>
-      Race Hopper
-      Website
-      Github
-    </p>
-
-  </div>
-  <div class="panel" id="botbuddies">
-    <h1 data-aos="fade-up">Bot-Buddies</h1>
-    <p>
-      Bot-Buddies
-      Website
-      Github
-    </p>
-
-  </div>
 
 
 
@@ -466,34 +496,20 @@
   <div id="resume">
 
     <div id="resumeMain" data-aos="fade-up">
-      <!-- <p id="resumeView">View <a href="/assets/ChrisChinResume.pdf" target="_blank">Resume</a> in new tab.
-        <img id="newTab" src="assets/newWindowIcon.png">
-      </p>
-      <p id="resumeDownload">
-        <a href="/assets/ChrisChinResume.pdf" download>Direct Download</a>
-        <img id="download" src="assets/downloadIcon.png">
-      </p> -->
       <div id="resumeTitle" data-aos="fade-up">
         <h1>Resume</h1>
       </div>
       <a id="resumeView" href="/assets/ChrisChinResume.pdf" target="_blank">View
-        <!-- <img id="viewresumelogo" src="assets/newWindowIcon.png"> -->
       </a>
-
-
       <a id="resumeDownload" href="/assets/ChrisChinResume.pdf" download> Download
-        <!-- <img id="downloadresumelogo"
-          src="assets/downloadIcon.png"> -->
       </a>
-
-
     </div>
   </div>
   <div id="contact">
     <div id="contactTitle" data-aos="fade-up">
       <h1>Contact</h1>
     </div>
-    <!-- <p>
+    <p>
       Email: chin.christopher@gmail.com
       <a href="mailto:cxhyizn.cxhyrzixyzstopzhxer@xgyymaizl.cxozm"
         onmouseover="this.href=this.href.replace(/[xyz]/g,'');" target="_blank">link</a>
@@ -503,7 +519,7 @@
     </p>
     <p>
       Github: https://github.com/chrischindev
-    </p> -->
+    </p>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"

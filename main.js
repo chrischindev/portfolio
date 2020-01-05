@@ -1,3 +1,11 @@
+AOS.init({
+  duration: 1000,
+  easing: "ease",
+  mirror: false,
+  disable: false,
+  once: true
+});
+
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-links");
@@ -40,39 +48,45 @@ const navSlide = () => {
 
 navSlide();
 
-// let div_top;
+// index of each deck, initialized to first slide for each deck
+let slideIndex = [1, 1, 1];
 
-// $(window).resize(function() {
-//   div_top = $("#sticky-anchor").offset().top;
-// });
+let slideId = ["recipixSlides", "raceSlides", "botSlides"];
+let dotId = ["recipixDots", "raceDots", "botDots"];
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
 
-// function sticky_relocate() {
-//   let window_top = $(window).scrollTop();
-//   if (window_top > div_top - 10) {
-//     $("#sticky").addClass("stick");
-//   } else {
-//     $("#sticky").removeClass("stick");
-//   }
-// }
+// Next/previous controls
+function plusSlides(n, no) {
+  showSlides((slideIndex[no] += n), no);
+}
 
-// if ($(window).width() >= 600) {
-//   $(function() {
-//     div_top = $("#sticky-anchor").offset().top;
-//     $(window).scroll(sticky_relocate);
-//   });
-// }
+// Thumbnail image controls
+function currentSlide(n, no) {
+  showSlides((slideIndex[no] = n), no);
+}
 
-// $(function() {
-//   div_top = $("#sticky-anchor").offset().top;
-//   $(window).scroll(sticky_relocate);
-// });
-AOS.init({
-  duration: 1000,
-  easing: "ease",
-  mirror: false,
-  disable: false,
-  once: true
-});
+function showSlides(n, no) {
+  let x = document.getElementsByClassName(slideId[no]);
+  let dots = document.getElementsByClassName(dotId[no]);
+  if (n > x.length) {
+    slideIndex[no] = 1;
+  }
+  if (n < 1) {
+    slideIndex[no] = x.length;
+  }
+  for (let i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  x[slideIndex[no] - 1].style.display = "block";
+  dots[slideIndex[no] - 1].className += " active";
+}
 
 // const linkAboutMe = document.getElementById("linkAboutMe");
 // const linkProjects = document.getElementById("linkProjects");
@@ -90,9 +104,9 @@ const botbuddies = document.getElementById("botbuddies");
 const resume = document.getElementById("resume");
 const contact = document.getElementById("contact");
 
-logo.addEventListener("click", () =>
-  aboutMe.scrollIntoView({ behavior: "smooth" })
-);
+// logo.addEventListener("click", () =>
+//   aboutMe.scrollIntoView({ behavior: "smooth" })
+// );
 // linkAboutMe.addEventListener("click", () =>
 //   aboutMe.scrollIntoView({ behavior: "smooth" })
 // );
