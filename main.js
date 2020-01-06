@@ -88,11 +88,11 @@ function showSlides(n, no) {
   dots[slideIndex[no] - 1].className += " active";
 }
 
-const logo = document.getElementById("logo");
-const linkAboutMe = document.getElementById("linkAboutMe");
-const linkProjects = document.getElementById("linkProjects");
-const linkResume = document.getElementById("linkResume");
-const linkContact = document.getElementById("linkContact");
+// const logo = document.getElementById("logo");
+// const linkAboutMe = document.getElementById("linkAboutMe");
+// const linkProjects = document.getElementById("linkProjects");
+// const linkResume = document.getElementById("linkResume");
+// const linkContact = document.getElementById("linkContact");
 
 // const linkRecipix = document.getElementById("linkRecipix");
 // const linkRaceHopper = document.getElementById("linkRaceHopper");
@@ -107,22 +107,22 @@ const botbuddies = document.getElementById("botbuddies");
 const resume = document.getElementById("resume");
 const contact = document.getElementById("contact");
 
-logo.addEventListener("click", () =>
-  hero.scrollIntoView({ behavior: "smooth" })
-);
-linkAboutMe.addEventListener("click", () =>
-  aboutMe.scrollIntoView({ behavior: "smooth" })
-);
+// logo.addEventListener("click", () =>
+//   hero.scrollIntoView({ behavior: "smooth" })
+// );
+// linkAboutMe.addEventListener("click", () =>
+//   aboutMe.scrollIntoView({ behavior: "smooth" })
+// );
 
-linkProjects.addEventListener("click", () =>
-  projects.scrollIntoView({ behavior: "smooth" })
-);
-linkResume.addEventListener("click", () =>
-  resume.scrollIntoView({ behavior: "smooth" })
-);
-linkContact.addEventListener("click", () =>
-  contact.scrollIntoView({ behavior: "smooth" })
-);
+// linkProjects.addEventListener("click", () =>
+//   projects.scrollIntoView({ behavior: "smooth" })
+// );
+// linkResume.addEventListener("click", () =>
+//   resume.scrollIntoView({ behavior: "smooth" })
+// );
+// linkContact.addEventListener("click", () =>
+//   contact.scrollIntoView({ behavior: "smooth" })
+// );
 // linkRecipix.addEventListener("click", () => {
 //   recipix.scrollIntoView({ behavior: "smooth" });
 // });

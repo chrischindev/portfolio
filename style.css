@@ -1,6 +1,6 @@
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 * {
   padding: 0;
   margin: 0;
@@ -724,6 +724,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+  html {
+    scroll-behavior: smooth;
+  }
   #skillsMain {
     flex-direction: row;
     width: 320px;
@@ -736,6 +739,9 @@ button:hover {
 
 /* ------MOBILE PHONES STYLING------ */
 @media only screen and (max-width: 600px) {
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     overflow-x: hidden;
   }
