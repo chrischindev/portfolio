@@ -744,6 +744,7 @@ button:hover {
   }
   body {
     overflow-x: hidden;
+    overflow-y: scroll;
   }
 
   nav {
