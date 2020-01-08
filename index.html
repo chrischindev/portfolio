@@ -513,11 +513,11 @@
   <div id="contact">
     <div id="contactTitle" data-aos="fade-up">
       <h1>Contact</h1>
-      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
-        <p class="hidden">
+      <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true" data-aos="fade-up">
+        <div class="hidden">
           <label>Fill this if you are not human: <input name="bot-field" /></label>
-        </p>
-        <p>
+        </div>
+        <!-- <p>
           <label>Your Name: <input type="text" name="name" /></label>
         </p>
         <p>
@@ -528,15 +528,32 @@
         </p>
         <p>
           <button type="submit">Send</button>
-        </p>
+        </p> -->
+        <div class="group">
+          <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+          <label>Name</label>
+        </div>
+        <div class="group">
+          <input type="text" required="required" /><span class="highlight"></span><span class="bar"></span>
+          <label>Email</label>
+        </div>
+        <div class="group">
+          <textarea type="textarea" rows="5" required="required"></textarea><span class="highlight"></span><span
+            class="bar"></span>
+          <label>Message</label>
+        </div>
+        <div class="btn-box">
+          <button class="btn btn-submit" type="submit">Send Message<img src="assets/paper-plane.png"></button>
+        </div>
       </form>
     </div>
+  </div>
 
-
+  <footer>
     <p>
       Email:
       <a href="mailto:cxhyizn.cxhyrzixyzstopzhxer@xgyymaizl.cxozm"
-        onmouseover="this.href=this.href.replace(/[xyz]/g,'');" target="_blank">link</a>
+        onmouseover="this.href=this.href.replace(/[zyx]/g,'');" target="_blank">link</a>
     </p>
     <p>
       LinkedIn: https://www.linkedin.com/in/chrischindev/
@@ -544,7 +561,7 @@
     <p>
       Github: https://github.com/chrischindev
     </p>
-  </div>
+  </footer>
 
   <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
